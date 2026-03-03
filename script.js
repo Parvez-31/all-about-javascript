@@ -1850,3 +1850,96 @@
 // }
 
 // console.log(upper(arr));
+
+// let newArr = [];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 !== 0) {
+//     newArr.push(arr[i] * 2);
+//   }
+// }
+
+// console.log(newArr);
+
+// const oddNum = (arr) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       return "Odd number found";
+//     }
+//     return "No odds numbers found";
+//   }
+// };
+
+// console.log(oddNum(arr));
+
+// const oddAvg = (arr) => {
+//   //   console.log(arr);
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+//   console.log(newArr);
+//   let sum = 0;
+//   for (let i = 0; i < newArr.length; i++) {
+//     sum = sum + newArr[i];
+//   }
+//   return (sum / newArr.length).toFixed(2);
+// };
+
+// console.log(oddAvg(arr));
+
+// const arr = [12, 3, 45, 4, 67, 97, 3, 5];
+
+// const minusOne = (arr) => {
+//   let newArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] % 2 !== 0) {
+//       newArr.push(arr[i] - 1);
+//     }
+//   }
+
+//   return newArr;
+// };
+
+// console.log(minusOne(arr));
+
+// const students = ["abul", "babul", "cabul", "abul", "babul", "dabul"];
+
+// const noDuplicate = (arr) => {
+//   let uniqueArr = [];
+//   for (let student of arr) {
+//     if (!uniqueArr.includes(student)) {
+//       uniqueArr.push(student);
+//     }
+//   }
+
+//   return uniqueArr;
+// };
+// const result = noDuplicate(students);
+// console.log(result);
+
+// const arr = [12, 3, 4, 56, 2, 3, 8, 9, 8, 7];
+
+// const noDuplicateNumber = (arr) => {
+//   let uniqueArr = [];
+//   for (let num of arr) {
+//     if (uniqueArr.includes(num) === false) {
+//       uniqueArr.push(num);
+//     }
+//   }
+//   return uniqueArr;
+// };
+
+// const result = noDuplicateNumber(arr);
+// console.log(result);
+
+let a = 5;
+let b = 7;
+
+console.log(a, b);
+const temp = a;
+a = b;
+b = temp;
+
+console.log(a, b);
