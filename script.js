@@ -1934,12 +1934,141 @@
 // const result = noDuplicateNumber(arr);
 // console.log(result);
 
-let a = 5;
-let b = 7;
+// let a = 5;
+// let b = 7;
 
-console.log(a, b);
-const temp = a;
-a = b;
-b = temp;
+// console.log(a, b);
+// const temp = a;
+// a = b;
+// b = temp;
 
-console.log(a, b);
+// console.log(a, b);
+
+// const numbers = [12, 34, 5, 6, 7676, 76, 8, 9];
+
+// numbers[1] = "bablu";
+// numbers.push("parvez", "mota");
+// console.log(numbers);
+
+// const students = {
+//   userName: "parvez",
+//   vill: "basirha",
+// };
+
+// students.userName = "mom";
+// students.pin = 232038;
+
+// console.log(students);
+
+// function add(num1, num2 = 0) {
+//   const result = num1 + num2;
+//   console.log(num1, num2, result);
+//   return result;
+// }
+// const sum = add(5);
+// console.log(sum);
+
+// const sumOfThree = (num1 = 0, num2 = 0, num3 = 0) => {
+//   const sum = num1 + num2 + num3;
+//   return sum;
+// };
+// console.log(sumOfThree());
+
+// const saveMoney = (money = 50) => {
+//   return money;
+// };
+// console.log(saveMoney());
+
+// const x = (name = "anonymous", earn = 0) => {
+//   console.log(name, earn);
+// };
+// x();
+
+// function hello(item) {
+//   if (item === 0) {
+//     return 1;
+//   }
+//   return item * hello(item - 1);
+// }
+// console.log(hello(5));
+// 9 +
+
+// const data = [
+//   {
+//     id: 1,
+//     name: "Alice",
+//     age: 25,
+//     hobbies: ["reading", "cycling", "painting"],
+//     address: {
+//       street: "123 Main St",
+//       city: "New York",
+//       country: "USA",
+//       geo: { lat: 40.7128, lng: -74.006 },
+//     },
+//     friends: [
+//       { id: 11, name: "Bob", age: 26 },
+//       { id: 12, name: "Charlie", age: 24 },
+//     ],
+//   },
+//   {
+//     id: 2,
+//     name: "David",
+//     age: 30,
+//     hobbies: ["gaming", "hiking"],
+//     address: {
+//       street: "456 Elm St",
+//       city: "Los Angeles",
+//       country: "USA",
+//       geo: { lat: 34.0522, lng: -118.2437 },
+//     },
+//     friends: [
+//       { id: 21, name: "Eve", age: 29 },
+//       { id: 22, name: "Frank", age: 31 },
+//     ],
+//   },
+// ];
+
+// function hello(item) {
+//   if (Array.isArray(item)) {
+//     item.forEach((sub) => hello(sub));
+//   } else if (typeof item === "object" && item !== null) {
+//     if (item.name) {
+//       console.log("Name:", item.name);
+//     }
+//     if (item.age) {
+//       console.log("Age:", item.age);
+//     }
+//     if (item.hobbies) {
+//       console.log("Hobbies =>");
+//       hello(item.hobbies);
+//     }
+//     if (item.address) {
+//       console.log("Address =>");
+//       if (item.address.street) {
+//         console.log("Street:", item.address.street);
+//       }
+//       if (item.address.city) {
+//         console.log("City:", item.address.city);
+//       }
+//       if (item.address.country) {
+//         console.log("Country:", item.address.country);
+//       }
+//       if (item.address.geo) {
+//         console.log("Geo >");
+//         if (item.address.geo.lat) {
+//           console.log("Lat:", item.address.geo.lat);
+//         }
+//         if (item.address.geo.lng) {
+//           console.log("Lng:", item.address.geo.lng);
+//         }
+//       }
+//     }
+//     if (item.friends) {
+//       console.log("Friends => ");
+//       hello(item.friends);
+//     }
+//   } else {
+//     console.log(item);
+//   }
+// }
+// hello(data);
