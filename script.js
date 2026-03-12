@@ -2454,8 +2454,78 @@
 // const maxNumber = Math.max(...number);
 // console.log(maxNumber);
 
-// const friends = [3, 4, 5, 6, 7];
-// const bondu = friends;
-// bondu.push(34);
+// const bondu = [...friends];
+// friends.push(34);
 // console.log(bondu);
 // console.log(friends);
+
+// const friends = [3, 4, 5, 6, 7];
+// const boundu = [...friends, 999];
+// console.log(boundu);
+// console.log(friends);
+
+// const fruits = ["mango", "bannana"];
+// const moreFruits = ["apple", ...fruits, "orange"];
+// console.log(moreFruits);
+
+// const arr1 = [1, 2];
+// const arr2 = [2, 4];
+// const arr1and2 = [...arr1, ...arr2];
+// console.log(arr1and2);
+
+// const person = {
+//   name: "parvez",
+//   vill: "basirhat",
+// };
+
+// const clonePerson = { ...person, age: 66 };
+// console.log(clonePerson);
+// const tech = ["condition", "array", "loop"];
+// const arr = ["variable", ...tech];
+// console.log(arr);
+
+// const fruits = ["apple", "banana", "mango"];
+// const myFruits = [...fruits, "papaya", "orange"];
+// console.log(myFruits);
+
+// const frontend = ["javascript"];
+// const backend = ["nodejs"];
+// const database = ["mongobd"];
+// const fullstack = [...frontend, ...backend, ...database];
+// console.log(fullstack);
+
+// const website = {
+//   name: "my-site",
+//   type: "e-commerse",
+//   status: "active",
+// };
+
+// const updateWebsite = { ...website, theme: "dark" };
+// console.log(updateWebsite);
+
+// const person = {
+//   name: "arif",
+//   age: 40,
+//   country: "india",
+// };
+
+// delete person.country;
+// const personClone = {
+//   ...person,
+// };
+// delete personClone.country;
+
+// console.log(personClone);
+
+// const car = {
+//   make: "toyota",
+//   model: "corolla",
+//   year: 2020,
+// };
+
+// const updatedCar = {
+//   ...car,
+//   year: 2021,
+// };
+
+// console.log(updatedCar);
