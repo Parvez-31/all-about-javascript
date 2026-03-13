@@ -2529,3 +2529,88 @@
 // };
 
 // console.log(updatedCar);
+// const a = new Promise((res) => res(20));
+// const b = new Promise((res, rej) => rej(30));
+// const c = new Promise((res) => res(40));
+
+// let promise = Promise.all([a, b, c])
+//   .then((item) => console.log(item))
+//   .catch((err) => console.log(err));
+
+// const math = (mark) => {
+//   return new Promise((res, rej) => {
+//     if (mark >= 40) {
+//       res("math passed");
+//     } else {
+//       rej("math failed");
+//     }
+//   });
+// };
+// const english = (mark) => {
+//   return new Promise((res, rej) => {
+//     if (mark >= 40) {
+//       res("english passed");
+//     } else {
+//       rej("english failed");
+//     }
+//   });
+// };
+// const history = (mark) => {
+//   return new Promise((res, rej) => {
+//     if (mark >= 40) {
+//       res("history passed");
+//     } else {
+//       rej("history failed");
+//     }
+//   });
+// };
+
+// Promise.allSettled([math(20), english(40), history(30)]).then((result) => {
+//   console.log("all subjects passed");
+//   console.log(result);
+// });
+//   .catch((err) => {
+//     console.log("subject failed");
+//     console.log(err, "hello");
+//   });
+
+// let a = new Promise((res, rej) => {
+//   let count = 0;
+//   const id = setInterval(() => {
+//     res("succesfull");
+//     count++;
+//     if (count === 4) {
+//       clearInterval(id);
+//     }
+//   }, 4000);
+//   setTimeout(() => {
+//     res("succesfull-2");
+//   }, 5000);
+// });
+
+// let b = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("succesfull-1");
+//   }, 2000);
+// });
+
+// Promise.any([a, b]).then((value) => console.log(value));
+
+// const person = {
+//   name: "parvez",
+//   town: "basirhat",
+//   address: {
+//     city: "kolkata",
+//   },
+// };
+
+// deep copy
+// const deepCopy = structuredClone(person);
+
+// shallow copy
+// const shCopy = { ...person, sub: "math" };
+
+// deepCopy.address.city = "delhi";
+// deepCopy.name = "nill";
+// console.log(deepCopy);
+// console.log(person);
