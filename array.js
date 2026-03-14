@@ -230,3 +230,8 @@
 // });
 
 // console.log(nameFriend);
+
+//find
+// const players = [75, 39, 29, 71, 90];
+// const findPlayer = players.find((player) => player > 100);
+// console.log(findPlayer);
