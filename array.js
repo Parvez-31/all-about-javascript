@@ -278,3 +278,8 @@
 
 // const friends = ["Tom", "Harry", "Jack", "Sam"];
 // const result = friends.forEach((friend) => console.log(friend));
+
+//some
+// const arr = [20, 30, 55, 45, 34];
+// const hasPassed = arr.some((num) => num >= 50);
+// console.log(hasPassed);
