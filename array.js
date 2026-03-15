@@ -296,3 +296,11 @@
 // const nested = [1, 2, 3, [7, 9, [6, 4, 3]]];
 // const flattened = nested.flat(2);
 // console.log(flattened);
+
+// const numbers = [30, 50, 100, 112, 89];
+// const result = numbers.some((num) => num > 100);
+// console.log(result);
+
+// const numbers = [3, 6, 9, 12, 15];
+// const result = numbers.every((num) => num % 3 === 0);
+// console.log(result);
