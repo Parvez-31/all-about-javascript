@@ -304,3 +304,100 @@
 // const numbers = [3, 6, 9, 12, 15];
 // const result = numbers.every((num) => num % 3 === 0);
 // console.log(result);
+
+// reduce
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++) {
+//   sum = sum + arr[i];
+// }
+
+// console.log(sum);
+
+// const arr = [1, 2, 3, 4, 5, 6, 7];
+
+// const result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// }, arr[0]);
+
+// console.log(result);
+
+// const product = [
+//   {
+//     id: 1,
+//     name: "lenovo",
+//     price: 65000,
+//   },
+//   {
+//     id: 2,
+//     name: "hp",
+//     price: 40000,
+//   },
+//   {
+//     id: 3,
+//     name: "dell",
+//     price: 45000,
+//   },
+
+//   {
+//     id: 4,
+//     name: "mac",
+//     price: 165000,
+//   },
+// ];
+
+// const names = product.map((item) => item.name);
+// console.log(names);
+
+// const expensive = product.filter((item) => item.price > 50000);
+// console.log(expensive);
+
+// const affordable = product.find((item) => item.price < 50000);
+// console.log(affordable);
+
+// const totalPrices = product.reduce((acc, { price }) => {
+//   return acc + price;
+// }, 0);
+// console.log(totalPrices);
+
+// const arr = [5, 10, 15, 20, 25];
+// const result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// }, 0);
+
+// console.log(result);
+
+// const products = [
+//   {
+//     name: "shampo",
+//     price: 100,
+//   },
+//   {
+//     name: "soap",
+//     price: 300,
+//   },
+//   {
+//     name: "bag",
+//     price: 1000,
+//   },
+// ];
+
+// const totalPrices = products.reduce((acc, curr) => {
+//   return acc + curr.price;
+// }, 0);
+
+// console.log(totalPrices);
+
+// const arr = [1, 2, 3, 4, 5];
+// const result = arr.reduce((acc, curr) => {
+//   return acc * curr;
+// }, 1);
+
+// console.log(result);
+
+// const arr = [100, 200, 300, 400];
+// const result = arr.reduce((acc, curr) => {
+//   return acc + curr;
+// }, 50);
+
+// console.log(result);
