@@ -448,3 +448,18 @@
 // const fruits = ["apple", "mango", "guava"];
 // const fruitsCopy = fruits.slice();
 // console.log(fruitsCopy);
+
+// splice
+// const arr = [1, 2, 3, 4, 5];
+// const result = arr.splice(1, 2);
+// console.log(result);
+// console.log(arr);
+
+// const arr = [1, 2, 5];
+// arr.splice(2, 0, 3, 4);
+// console.log(arr);
+
+// replace element
+// const arr = [1, 2, 3, 4];
+// arr.splice(1, 2, 10, 20);
+// console.log(arr);
