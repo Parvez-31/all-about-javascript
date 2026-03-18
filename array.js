@@ -410,3 +410,17 @@
 // const num = [100, 800, 50, 80, 8, 7];
 // const result = num.sort((a, b) => a - b);
 // console.log(result);
+
+// const friends = [
+//   { name: "parvez", age: 22 },
+//   { name: "mota", age: 30 },
+//   { name: "nill", age: 12 },
+// ];
+
+// const result = friends.sort((a, b) => b.age - a.age);
+// console.log(result);
+// console.log(friends);
+
+// const numbers = [50, 12, 25, 8, 15];
+// numbers.sort((a, b) => a - b);
+// console.log(numbers);
