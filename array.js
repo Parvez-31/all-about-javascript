@@ -424,3 +424,17 @@
 // const numbers = [50, 12, 25, 8, 15];
 // numbers.sort((a, b) => a - b);
 // console.log(numbers);
+
+// reverse
+// const names = ["alise", "bob", "david", "parvez"];
+// const results = names.reverse();
+// console.log(results);
+// console.log(names);
+
+// const friends = [
+//   { name: "parvez", age: 22 },
+//   { name: "mota", age: 30 },
+//   { name: "nill", age: 12 },
+// ];
+// friends.reverse();
+// console.log(friends);
