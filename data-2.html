@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>data</title>
+  </head>
+  <body>
+    <h1>Posts</h1>
+    <ul id="user-list"></ul>
+    <script>
+      const userListEl = document.getElementById("user-list");
+      const fetchUser = async () => {
+        try {
+          const res = await fetch(`https://jsonplaceholder.typicode.com/posts`);
+          if (!res.ok) throw new Error("Network Error");
+          const data = await res.json();
+          console.log(data);
+          data.slice(5, 15).forEach((elem) => {
+            const li = document.createElement("li");
+            li.textContent = `${elem.title}, ${elem.body}`;
+            userListEl.appendChild(li);
+          });
+
+          //   data.products.forEach((product) => {
+          //     product.images.forEach((img) => {
+          //       const imgEl = document.createElement("img");
+          //       imgEl.src = img;
+          //       imgEl.width = 150;
+          //       userListEl.appendChild(imgEl);
+          //     });
+
+          //     // console.log(product);
+          //   });
+        } catch (error) {
+          console.log("Error", error);
+          userListEl.innerHTML = `<li style="color:red">Failed to load users</li>`;
+        }
+      };
+      fetchUser();
+    </script>
+  </body>
+</html>
