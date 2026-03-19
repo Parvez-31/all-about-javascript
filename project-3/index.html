@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - 3</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .parent {
+      width: 300px;
+      border: 1px solid blueviolet;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      padding: 20px 0;
+      border-radius: 10px;
+    }
+
+    .my-input {
+      font-size: 1.25rem;
+      padding: 4px 8px;
+      width: 200px;
+    }
+
+    .output {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 200px;
+      font-size: 1.1rem;
+    }
+
+    .output p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <body>
+    <div class="parent">
+      <input type="text" class="my-input" id="my-input" name="username" />
+      <div class="output">
+        <p class="key-pressed">Input Value:</p>
+        <p class="key-code">Input Name:</p>
+        <p class="char-code">Input Type:</p>
+        <p class="event-type">Event Type:</p>
+      </div>
+    </div>
+
+    <script>
+      const myInputEl = document.getElementById("my-input");
+
+      const handleInput = (event) => {
+        console.log(event);
+        // console.log(event.target.value);
+        // console.log(event.target.name);
+        document.querySelector(".key-pressed").innerHTML =
+          `Input Value: ${event.target.value}`;
+        document.querySelector(".key-code").innerHTML =
+          `Input Name: ${event.target.name}`;
+        document.querySelector(".char-code").innerHTML =
+          `Input Type: ${event.inputType}`;
+        document.querySelector(".event-type").innerHTML =
+          `Event Type: ${event.type}`;
+      };
+      myInputEl.addEventListener("input", handleInput);
+    </script>
+  </body>
+</html>
