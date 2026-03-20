@@ -135,3 +135,22 @@
 // console.log(programming.indexOf("rip"));
 // const x = "python";
 // console.log(x.length);
+
+// const subject = "Chemistry";
+// const book = "chemistry";
+// if (subject.toLowerCase() === book.toLowerCase()) {
+//   console.log("i am reading book");
+// } else {
+//   console.log("hudai page ultai");
+// }
+
+// const userName = "user m mad";
+// console.log(userName.toUpperCase());
+// const userName = "usEr M mad";
+// console.log(userName.toLowerCase());
+
+// const email = "User@Example.Com";
+// console.log(email.toLowerCase());
+
+// const language = "javaScript";
+// console.log(language.toLowerCase().includes("script"));
