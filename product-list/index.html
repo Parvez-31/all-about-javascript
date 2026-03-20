@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products-List</title>
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <ul id="product-list"></ul>
+
+    <script>
+      const productListEl = document.getElementById("product-list");
+
+      const fetchProducts = async () => {
+        try {
+          const res = await fetch("https://dummyjson.com/products");
+          const response = await res.json();
+          console.log(response);
+          response.products.forEach((product) => {
+            // console.log(product);
+            const liEl = document.createElement("li");
+            liEl.innerHTML = `
+               <img src="${product.thumbnail}" width="100"/>  
+                 ${product.title} 
+<button onclick="viewDetails(${product.id})">view details</button>
+                  `;
+            productListEl.appendChild(liEl);
+          });
+        } catch (error) {
+          console.log(error);
+        }
+      };
+
+      const viewDetails = (id) => {
+        window.location.href = `details.html?id=${id}`;
+      };
+      fetchProducts();
+    </script>
+  </body>
+</html>

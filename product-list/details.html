@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details - Page</title>
+  </head>
+  <body>
+    <h1>Product Details</h1>
+    <div class="product-details"></div>
+
+    <script>
+      const container = document.querySelector(".product-details");
+
+      // get id from url
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get("id");
+
+      const fetchProduct = async () => {
+        try {
+          const res = await fetch(`https://dummyjson.com/products/${id}`);
+          const data = await res.json();
+
+          container.innerHTML = `
+<img src="${data.thumbnail}" width="200"/> 
+            <h2>${data.title}</h2>
+          <p><b>Price:</b> $${data.price}</p>
+          <p><b>Description:</b> ${data.description}</p>
+          `;
+        } catch (error) {
+          console.log(error);
+        }
+      };
+      fetchProduct();
+    </script>
+  </body>
+</html>
