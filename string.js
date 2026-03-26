@@ -155,10 +155,18 @@
 // const language = "javaScript";
 // console.log(language.toLowerCase().includes("script"));
 
-const drink = " water";
-const liquid = "water";
-if (drink.trim() === liquid.trim()) {
-  console.log("dami pani");
-} else {
-  console.log("kom dam false pani");
-}
+// const drink = " water";
+// const liquid = "water";
+// if (drink.trim() === liquid.trim()) {
+//   console.log("dami pani");
+// } else {
+//   console.log("kom dam false pani");
+// }
+
+// const address = "basirhatdandirhat";
+// const part = address.slice(5, 8);
+// console.log(part);
+
+// const address = "basirhatdandirhat";
+// const result = address.slice(5);
+// console.log(result);
