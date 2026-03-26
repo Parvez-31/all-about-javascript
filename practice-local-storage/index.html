@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Local - Storage</title>
+  </head>
+  <body>
+    <h1>Product List</h1>
+    <input type="text" placeholder="Enter product name" id="name" />
+    <input type="number" placeholder="Enter product price" id="price" />
+    <button id="btn">save</button>
+
+    <h2>Stored Products:</h2>
+    <ul id="product-list"></ul>
+
+    <!-- js start -->
+    <script>
+      const btnEl = document.getElementById("btn");
+      const ulEl = document.getElementById("product-list");
+
+      const addProduct = () => {
+        const productName = document.getElementById("name").value;
+        const productPrice = document.getElementById("price").value;
+        if (!productName || !productPrice) {
+          alert("Enter your product name and price");
+          return;
+        }
+
+        // console.log("hi");
+
+        let products = JSON.parse(localStorage.getItem("products"));
+        if (!Array.isArray(products)) {
+          products = [];
+        }
+
+        const newProduct = {
+          id: Date.now(),
+          name: productName,
+          price: Number(productPrice),
+        };
+
+        products.push(newProduct);
+        localStorage.setItem("products", JSON.stringify(products));
+
+        document.getElementById("name").value = "";
+        document.getElementById("price").value = "";
+      };
+
+      btnEl.addEventListener("click", addProduct);
+    </script>
+  </body>
+</html>
