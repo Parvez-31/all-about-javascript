@@ -154,3 +154,11 @@
 
 // const language = "javaScript";
 // console.log(language.toLowerCase().includes("script"));
+
+const drink = " water";
+const liquid = "water";
+if (drink.trim() === liquid.trim()) {
+  console.log("dami pani");
+} else {
+  console.log("kom dam false pani");
+}
