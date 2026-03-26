@@ -11,58 +11,11 @@
 
     <input type="text" id="productName" placeholder="Enter product name" />
     <input type="number" id="productPrice" placeholder="Enter price" />
-    <button onclick="addProduct()">Add Product</button>
+    <button id="btn">Add Product</button>
 
     <h2>Stored Products:</h2>
     <ul id="productList"></ul>
 
-    <script>
-      window.onload = function () {
-        displayProducts();
-      };
-
-      function addProduct() {
-        let name = document.getElementById("productName").value;
-        let price = document.getElementById("productPrice").value;
-
-        if (!name || !price) {
-          alert("Please enter product name and price!");
-          return;
-        }
-
-        let products = JSON.parse(localStorage.getItem("products"));
-
-        if (!Array.isArray(products)) {
-          products = [];
-        }
-
-        let newProduct = {
-          id: Date.now(),
-          name: name,
-          price: Number(price),
-        };
-
-        products.push(newProduct);
-        localStorage.setItem("products", JSON.stringify(products));
-
-        document.getElementById("productName").value = "";
-        document.getElementById("productPrice").value = "";
-
-        displayProducts();
-      }
-
-      function displayProducts() {
-        let productList = document.getElementById("productList");
-        productList.innerHTML = "";
-
-        let products = JSON.parse(localStorage.getItem("products")) || [];
-
-        products.forEach((p) => {
-          let li = document.createElement("li");
-          li.textContent = `${p.name} - ₹${p.price}`;
-          productList.appendChild(li);
-        });
-      }
-    </script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
