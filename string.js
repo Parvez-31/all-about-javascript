@@ -1,22 +1,22 @@
 // What is string in js?
 // String in js is used to store text value.
 
-// let userName = "Parvez Hossien Tarafder";
-// let userNameLength = userName.length;
-// console.log(userNameLength);
+// let username = "parvez hossien tarafder";
+// let usernamelength = username.length;
+// console.log(usernamelength);
 
-// Js always returns length of a string as lastindex + 1.
+// js always returns length of a string as lastindex + 1.
 
-// Method: -> Slice method
-// let data = "Hello World!!";
+// method: -> slice method
+// let data = "hello world!!";
 // let d = data.slice(0, 8);
 // console.log(data);
 // console.log(d);
 
-// NOTE:
-// In slice method end position is calculated but value is not included.
-// Slice method accepts two parameters(start positon, end positon)
-// Slice method is used to extract a part from a string.
+// note:
+// in slice method end position is calculated but value is not included.
+// slice method accepts two parameters(start positon, end positon)
+// slice method is used to extract a part from a string.
 
 // let d1 = data.slice(6);
 // console.log(d1);
@@ -27,89 +27,89 @@
 // let d3 = data.slice(-3);
 // console.log(d3);
 
-// Method: -> Substring method
-// let text = "Hello Monkey";
+// method: -> substring method
+// let text = "hello monkey";
 // let t1 = text.substring(5, 10);
 // console.log(t1);
 
-// NOTE:
-// Like slice method, substring is also used to extract a certain part of a string.
-// Substring doesn't accept start or end position in negative index.
+// note:
+// like slice method, substring is also used to extract a certain part of a string.
+// substring doesn't accept start or end position in negative index.
 
-// Method: -> Replace method
-// let rt = "Welcome to Flipkart";
-// let rt1 = rt.replace("Flipkart", "Mintra");
+// method: -> replace method
+// let rt = "welcome to flipkart";
+// let rt1 = rt.replace("flipkart", "mintra");
 // console.log(rt);
 // console.log(rt1);
 
-// Method:  -> Trim method
-// let a = "            Hello World                ";
+// method:  -> trim method
+// let a = "            hello world                ";
 // console.log(a.length);
-// let a1 = a.trimStart();
+// let a1 = a.trimstart();
 // console.log(a1.length);
 // console.log(a1);
-// let a2 = a.trimEnd();
+// let a2 = a.trimend();
 // console.log(a2);
-// both -trimStart and trimEnd
+// both -trimstart and trimend
 // let a3 = a.trim();
 // console.log(a3.length);
 
-// Method: -> ReplaceAll method
-// let t4 = "I love cupcakes as CUPCAKES are delicious.";
-// let t5 = t4.replaceAll(/cupcakes/gi, "pastries");
+// method: -> replaceall method
+// let t4 = "i love cupcakes as cupcakes are delicious.";
+// let t5 = t4.replaceall(/cupcakes/gi, "pastries");
 // console.log(t4);
 // console.log(t5);
 
-// Method: -> Concat method
-// let c1 = "Superman";
-// let c2 = "Batman";
+// method: -> concat method
+// let c1 = "superman";
+// let c2 = "batman";
 // let c3 = c1.concat(" ", c2);
 // console.log(c3);
 
-// TOPIC: -> Template string
-// console.log(`Hello world!! I am your beloved ${c1} and ${c2}`);
+// topic: -> template string
+// console.log(`hello world!! i am your beloved ${c1} and ${c2}`);
 
-// Method: -> Search method
-// let h = "Let FIND the 'find' word in the text";
+// method: -> search method
+// let h = "let find the 'find' word in the text";
 // let h1 = h.search(/find/gi);
 // console.log(h);
 // console.log(h1);
 
-// Method: -> indexOf method
-// let h2 = h.indexOf("find");
+// method: -> indexof method
+// let h2 = h.indexof("find");
 // console.log(h2);
 
 // let h3 = h.search("hello");
 // console.log(h3);
 
-// let h4 = h.indexOf("hello");
+// let h4 = h.indexof("hello");
 // console.log(h4);
 
-// Method: -> lastIndexOf
-// let txt1 = "The world text in this text is very confusing text";
-// let rtxt1 = txt1.lastIndexOf("text");
+// method: -> lastindexof
+// let txt1 = "the world text in this text is very confusing text";
+// let rtxt1 = txt1.lastindexof("text");
 // console.log(txt1);
 // console.log(rtxt1);
 
-// Method: -> startWith
-// let txt2 = txt1.startsWith("The");
-// let txt3 = txt1.startsWith("Hello");
+// method: -> startwith
+// let txt2 = txt1.startswith("the");
+// let txt3 = txt1.startswith("hello");
 // console.log(txt2);
 // console.log(txt3);
 
-// Method: -> endsWith
-// let txt4 = txt1.endsWith("rain");
-// let txt5 = txt1.endsWith("text");
+// method: -> endswith
+// let txt4 = txt1.endswith("rain");
+// let txt5 = txt1.endswith("text");
 // console.log(txt4);
 // console.log(txt5);
 
-// Method: -> includes
+// method: -> includes
 // let txt6 = txt1.includes("this");
 // let txt7 = txt1.includes("you");
 // console.log(txt6);
 // console.log(txt7);
 
-// Method: -> split method
+// method: -> split method
 // let hello = "hello world";
 // let sp = hello.split("*");
 // console.log(sp);
@@ -118,42 +118,42 @@
 // console.log(city.length);
 // console.log(city[0]);
 // console.log(city.includes("o"));
-// console.log(city.indexOf("at"));
-// console.log(city.indexOf("xz"));
+// console.log(city.indexof("at"));
+// console.log(city.indexof("xz"));
 
 // const num = [11, 56, 23, 88, 22];
 // num[1] = 99;
 // console.log(num);
 
 // const city = "mumbai";
-// console.log(city.indexOf("b"));
+// console.log(city.indexof("b"));
 // const division = "basirhat";
 // console.log(division.includes("h"));
 // const name = "parvez";
 // console.log(name[name.length - 1]);
 // const programming = "javascript";
-// console.log(programming.indexOf("rip"));
+// console.log(programming.indexof("rip"));
 // const x = "python";
 // console.log(x.length);
 
-// const subject = "Chemistry";
+// const subject = "chemistry";
 // const book = "chemistry";
-// if (subject.toLowerCase() === book.toLowerCase()) {
+// if (subject.tolowercase() === book.tolowercase()) {
 //   console.log("i am reading book");
 // } else {
 //   console.log("hudai page ultai");
 // }
 
-// const userName = "user m mad";
-// console.log(userName.toUpperCase());
-// const userName = "usEr M mad";
-// console.log(userName.toLowerCase());
+// const username = "user m mad";
+// console.log(username.touppercase());
+// const username = "user m mad";
+// console.log(username.tolowercase());
 
-// const email = "User@Example.Com";
-// console.log(email.toLowerCase());
+// const email = "user@example.com";
+// console.log(email.tolowercase());
 
-// const language = "javaScript";
-// console.log(language.toLowerCase().includes("script"));
+// const language = "javascript";
+// console.log(language.tolowercase().includes("script"));
 
 // const drink = " water";
 // const liquid = "water";
@@ -181,14 +181,14 @@
 // const result = friend.split(",");
 // console.log(result);
 
-// const realFriend = ["parvez", "rahim", "sajit", "fahi"];
-// const result = realFriend.join("*");
+// const realfriend = ["parvez", "rahim", "sajit", "fahi"];
+// const result = realfriend.join("*");
 // console.log(result);
-// console.log(realFriend);
+// console.log(realfriend);
 
 // const first = "parvez";
 // const middle = "hossien";
-// const last = "Tarafder";
+// const last = "tarafder";
 // const name = first + middle + last;
 // console.log(name);
 
@@ -196,14 +196,14 @@
 // const str2 = "world";
 // const result = str1.concat(" ", str2);
 // console.log(result);
-// console.log("I".concat(" love", " javascript"));
+// console.log("i".concat(" love", " javascript"));
 
 // const friend = "rahim,parvez,mota,afroja";
 // const result = friend.split(",");
 // console.log(result);
 
-// const realFriend = ["parvez", "rahim", "sajit", "fahi"];
-// const result = realFriend.join(",");
+// const realfriend = ["parvez", "rahim", "sajit", "fahi"];
+// const result = realfriend.join(",");
 // console.log(result);
 
 // const str = "function if else while";
@@ -234,5 +234,10 @@
 // console.log(str.substring(10, 15));
 
 // const str = "hello!";
-// const repetedStr = str.repeat(4);
-// console.log(repetedStr);
+// const repetedstr = str.repeat(4);
+// console.log(repetedstr);
+
+// const num = 123;
+// const str = num.toString();
+// console.log(typeof str);
+// console.log(typeof num);
