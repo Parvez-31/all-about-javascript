@@ -232,3 +232,7 @@
 
 // const str = "code more learn more";
 // console.log(str.substring(10, 15));
+
+// const str = "hello!";
+// const repetedStr = str.repeat(4);
+// console.log(repetedStr);
