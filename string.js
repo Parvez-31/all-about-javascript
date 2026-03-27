@@ -247,3 +247,11 @@
 // console.log(result);
 // const result = text.replaceAll("programming", "coding");
 // console.log(result);
+
+// const str = "I am learning web dev";
+// let reverse = "";
+// for (let letter of str) {
+//   reverse = letter + reverse;
+// }
+
+// console.log(reverse);
