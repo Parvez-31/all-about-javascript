@@ -241,3 +241,9 @@
 // const str = num.toString();
 // console.log(typeof str);
 // console.log(typeof num);
+
+// const text = "I love programming, programming is fun";
+// const result = text.replace("programming", "coding");
+// console.log(result);
+// const result = text.replaceAll("programming", "coding");
+// console.log(result);
