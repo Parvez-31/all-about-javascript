@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project-1</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      .all-btn {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .save,
+      .get,
+      .delete {
+        padding: 10px 20px;
+        border-radius: 10px;
+        border-style: none;
+        background-color: bisque;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="all-btn">
+      <button class="save">Save</button>
+      <button class="get">Get</button>
+      <button class="delete">Delete</button>
+    </div>
+
+    <!-- js start -->
+    <script>
+      const saveEl = document.querySelector(".save");
+      const getEl = document.querySelector(".get");
+      const deleteEl = document.querySelector(".delete");
+
+      saveEl.addEventListener("click", () => {
+        // console.log("hello");
+        const user = {
+          userName: "parvez",
+          age: 27,
+        };
+        localStorage.setItem("user", JSON.stringify(user));
+      });
+
+      getEl.addEventListener("click", () => {
+        const data = JSON.parse(localStorage.getItem("user"));
+        console.log(data.age);
+      });
+
+      deleteEl.addEventListener("click", () => {
+        const removeData = localStorage.removeItem("user");
+        console.log(removeData);
+      });
+    </script>
+  </body>
+</html>
