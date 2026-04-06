@@ -2675,3 +2675,66 @@
 // ];
 
 // payments.forEach((p) => p.pay(500));
+
+// class Animal {
+//   constructor(name) {
+//     if (new.target === Animal) {
+//       throw new Error("Error");
+//     }
+//     this.name = name;
+//   }
+//   speak() {
+//     throw new Error("Method speak() must be implemented");
+//   }
+// }
+
+// class Dog extends Animal {
+//   speak() {
+//     return `${this.name} barks`;
+//   }
+// }
+
+// const dog = new Dog("harry");
+// console.log(dog.speak());
+
+// const obj1 = { name: "A" };
+// const obj2 = { name: "B" };
+
+// function sayName() {
+//   console.log(this.name);
+// }
+
+// obj1.say = sayName;
+// obj2.say = sayName;
+// console.log(obj1);
+// console.log(obj2);
+
+// obj1.say();
+// obj2.say();
+
+// class BankAc {
+//   #balance = 0; //private
+
+//   deposite(amount) {
+//     if (amount > 0) {
+//       this.#balance = this.#balance + amount;
+//       console.log("deposite", amount);
+//     }
+//   }
+//   withdraw(amount) {
+//     if (amount > 0 && amount <= this.#balance) {
+//       this.#balance = this.#balance - amount;
+//       console.log("withdrew", amount);
+//     } else {
+//       console.log("invalid amout");
+//     }
+//   }
+//   getBalace() {
+//     return this.#balance;
+//   }
+// }
+
+// const ac = new BankAc();
+// ac.deposite(2000);
+// ac.withdraw(700);
+// console.log(ac.getBalace());
