@@ -2738,3 +2738,111 @@
 // ac.deposite(2000);
 // ac.withdraw(700);
 // console.log(ac.getBalace());
+
+// let p = {
+//   job: "web developer",
+// };
+
+// let q = p;
+// console.log(p, q);
+
+// q = {
+//   job: "backend developer",
+// };
+
+// console.log(p, q);
+
+// let p = {
+//   job: "web developer",
+// };
+// let q = p;
+// console.log(p, q);
+
+// q.xyz = "backend dev";
+// console.log(p, q);
+
+// function changeValue(num) {
+//   num = 20;
+//   console.log("Inside function", num);
+// }
+
+// let x = 10;
+// console.log("Before function call", x); // 10
+// changeValue(x); // 20
+// console.log("After function call", x); // 10
+
+// function updateJob(person) {
+//   person.job = "backend dev";
+//   console.log("inside function", person);
+// }
+
+// let employee = {
+//   job: "frontend dev",
+// };
+// console.log("before function call", employee); // frontedn
+// updateJob(employee); // backend
+// console.log("after function call", employee); // backend
+
+// let num = 15;
+// let copy = num;
+// copy = 25;
+// console.log(num, copy); // 15, 25
+
+// let arr = [1, 2, 3];
+// let arrCopy = arr;
+// arrCopy.push(88);
+// console.log(arr, arrCopy);
+
+// let language = {
+//   name: "js",
+//   age: 30,
+// };
+
+// let newVersion = language;
+// newVersion.location = "Browser";
+// console.log(language, newVersion);
+
+// let name;
+// console.log(name);
+
+// function add(a, b) {
+//   const plus = a + b;
+// }
+
+// console.log(add(2, 4));
+
+// function add(a, b, c, d, f) {
+//   console.log(a, b, c, d, f);
+// }
+
+// add(23, 4);
+
+// function noNegative(a, b) {
+//   if (a < 0 || b < 0) {
+//     return;
+//   }
+//   return a + b;
+// }
+// console.log(noNegative(2, -5));
+// Output: undefined;
+
+// const fifth = { id: 2, name: "ponchom", age: 40 };
+// console.log(fifth.salary);
+// Output: undefined;
+
+// const arr = [3, 6, 3, 7, 6, 2, 6];
+// delete arr[1];
+// console.log(arr);
+// console.log(arr[1]);
+
+// const students = {
+//   name: "parvez",
+//   roll: 1,
+//   marks: 99,
+// };
+
+// console.log(students.marks);
+
+// const arr = [2, 3, 4, 5, 6, 7];
+// delete arr[2];
+// console.log(arr[2]);
