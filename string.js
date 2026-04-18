@@ -255,3 +255,18 @@
 // }
 
 // console.log(reverse);
+
+// let p = {
+//   job: "web developer",
+// };
+
+// let q = p;
+// console.log(p, q);
+
+// q = {
+//   job: "backend developer",
+//   name: "parvez",
+// };
+
+// q.job = "backend developer";
+// console.log(p, q);
