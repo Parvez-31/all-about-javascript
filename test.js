@@ -97,14 +97,83 @@
 //   .then((data) => console.log(data))
 //   .catch((err) => console.log(err));
 
-const hello1 = () => {
-  var x = 2;
-  console.log(x, y);
-};
-const hello2 = () => {
-  var y = 4;
-  console.log(x, y);
-};
+// const hello1 = () => {
+//   var x = 2;
+//   console.log(x, y);
+// };
+// const hello2 = () => {
+//   var y = 4;
+//   console.log(x, y);
+// };
 
-hello1();
-hello2();
+// hello1();
+// hello2();
+
+// const data = {
+//   name: "rahul",
+//   age: 23,
+//   skill: ["js", "python"],
+//   address: {
+//     city: "kolkata",
+//     pin: 3043804,
+//   },
+// };
+
+// console.log(prettyJson);
+
+// function filterKeys(key, value) {
+//   if (key === "age") {
+//     return undefined;
+//   } else {
+//     return value;
+//   }
+// }
+
+// const prettyJson = JSON.stringify(data, filterKeys, 2);
+// console.log(prettyJson);
+
+// const addFn = (x) => {
+//   return (y) => {
+//     return x + y;
+//   };
+// };
+
+// const result = addFn(10);
+// // console.log(result);
+// console.log(result(3));
+
+// let a = { name: "parvez" };
+// let b = { name: "mota" };
+
+// function n(age, address) {
+//   return `hello my name is ${this.name} , age is ${age} and home ${address}`;
+// }
+
+// console.log(n.call(a, 34, "basirhat"));
+// let a = { name: "parvez" };
+// let b = { name: "mota" };
+
+// function n(age, address) {
+//   return `hello my name is ${this.name} , age is ${age} and home ${address}`;
+// }
+
+// console.log(n.apply(a, [34, "basirhat"]));
+
+// function n(age, address) {
+//   return `hello my name is ${this.name} , age is ${age} and home ${address}`;
+// }
+
+// let m = n.bind(a, 34, "kolkata");
+// console.log(m());
+
+// let hello = {
+//   name: "parvez",
+//   hello1: function () {
+//     console.log(`hello ${this.name}`);
+//   },
+// };
+
+// let hl = { name: "nill" };
+
+// let x = hello.hello1.bind(hl);
+// x();
