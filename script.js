@@ -3080,3 +3080,8 @@
 // }
 
 // schoolDetails();
+
+// number constractor
+// const num = "45";
+// const number = Number(num);
+// console.log(typeof number);
