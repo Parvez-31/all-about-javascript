@@ -3219,3 +3219,25 @@
 // const sentence = "I am eating apple. apple is good. apple helps me a lot";
 // const newSentence = sentence.replace(/apple/g, "javascript");
 // console.log(newSentence);
+
+// const mySet = new Set([1, 2, 3, 4, 56, 7]);
+// console.log(mySet);
+
+// const number = [1, 2, 3, 4, 4, 6, 7, 5, 7, 5, 4, 3];
+// const uniqueNunber = new Set(number);
+// console.log(uniqueNunber);
+
+// const number = [1, 2, 3, 4, 4, 6, 7, 5, 7, 5, 4, 3];
+// const uniqueNunber = [...new Set(number)];
+// console.log(uniqueNunber);
+
+// const mySet = new Set();
+// mySet.add(10);
+// mySet.add(20);
+// mySet.add(10);
+// mySet.add(30);
+// mySet.add(20);
+// console.log(mySet);
+// mySet.delete(10);
+// console.log(mySet);
+// console.log(mySet.has(10));
