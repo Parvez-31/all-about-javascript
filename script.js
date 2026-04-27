@@ -3247,3 +3247,112 @@
 // myMap.set("name", "rahim");
 // myMap.set("age", 25);
 // console.log(myMap);
+
+// TOPIC: Error Validation
+// function sum(num1, num2) {
+//   const total = num1 * num2;
+//   return total;
+// }
+
+// const result = sum(4, "seven");
+// console.log(result);
+
+// function multiply(num1, num2) {
+//   if (typeof num1 !== "number" || typeof num2 !== "number") {
+//     return "please provide a number";
+//   }
+//   const totol = num1 * num2;
+
+//   return totol;
+// }
+
+// const result = multiply(4, "5");
+// console.log(result);
+
+// function fullName(num1, num2) {
+//   const full = num1 + " " + num2;
+//   return full;
+// }
+
+// const result = fullName("parvez", "tarafder");
+// console.log(result);
+
+// function fullName(firstName, secondName) {
+//   if (typeof firstName !== "string") {
+//     return "firstName should be string";
+//   }
+//   if (typeof secondName !== "string") {
+//     return "secondName should be string";
+//   }
+
+//   const full = firstName + " " + secondName;
+//   return full;
+// }
+
+// const result = fullName("parvez", "tarafder");
+// console.log(result);
+
+// function getPrice(product) {
+//   const price = product.price;
+//   return price;
+// }
+
+// const result = getPrice({ name: "headphone", price: 343434, color: "red" });
+// console.log(result);
+
+// function getPrice(product) {
+//   if (typeof product !== "object") {
+//     return "please provide an object";
+//   }
+//   const price = product.price;
+//   return price;
+// }
+
+// const result = getPrice({ name: "headphone", price: 343434, color: "red" });
+// const result = getPrice(45);
+// console.log(result);
+
+// function getSecond(number) {
+//   console.log(typeof number);
+//   const second = number[1];
+//   return second;
+
+// }
+
+// const result = getSecond([1, 2, 3]);
+// console.log(result);
+
+// function getSecond(number) {
+//   if (Array.isArray(number) === false) {
+//     return "please provide an array";
+//   }
+//   const second = number[1];
+//   return second;
+// }
+
+// const result = getSecond([3, 4, 56, 6, 7]);
+// const result = getSecond(45);
+// console.log(result);
+
+// function firstLetter(name) {
+//   if (typeof name !== "string") {
+//     return "please provide a string";
+//   }
+//   const first = name[0];
+//   return first;
+// }
+
+// const result = firstLetter("parvez");
+// const result = firstLetter(89);
+// console.log(result);
+
+// function lastElement(arr) {
+//   if (Array.isArray(arr) === false) {
+//     return "please provide an array";
+
+//   }
+//   const last = arr[arr.length - 1];
+//   return last;
+// }
+// const result = lastElement([2, 6, 4, 7, 8]);
+// console.log(result);
