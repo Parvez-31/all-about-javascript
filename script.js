@@ -3356,3 +3356,52 @@
 // }
 // const result = lastElement([2, 6, 4, 7, 8]);
 // console.log(result);
+
+// console.log(1);
+// console.log(2);
+// setTimeout(() => {
+//   console.log(3);
+// }, 5000);
+// console.log(4);
+// console.log(5);
+
+// setInterval(() => {
+//   console.log("hello");
+// }, 1000);
+
+// let num = 0;
+// setInterval(() => {
+//   num++;
+//   console.log(num);
+// }, 1000);
+
+// let num = 0;
+// const intervelId = setInterval(() => {
+//   num++;
+//   console.log(num);
+//   if (num === 5) {
+//     clearInterval(intervelId);
+//   }
+// }, 1000);
+
+// setTimeout(() => {
+//   console.log(
+//     "I wasted 3sec of my life by looking at screen at doing nothing.",
+//   );
+// }, 3000);
+
+// let num = 131;
+// setInterval(() => {
+//   num = num + 2;
+//   console.log(num);
+// }, 2000);
+
+// let num = 0;
+// const intervelId = setInterval(() => {
+//   num++;
+//   console.log("i am learning js");
+
+//   if (num === 6) {
+//     clearInterval(intervelId);
+//   }
+// }, 2000);
