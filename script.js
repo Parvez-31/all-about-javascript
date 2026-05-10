@@ -3640,3 +3640,49 @@
 
 // const inner = outer(8);
 // inner(7);
+
+// function add(a, b) {
+//   return a + b;
+// }
+// console.log(add(5, 6));
+
+// let total = 0;
+
+// function add(n) {
+//   total = total + n;
+//   return total;
+// }
+
+// console.log(add(5));
+// console.log(add(5));
+
+// console.log(x);
+// let x = 10;
+
+// console.log(`x value is ${x}`);
+
+// console.log("app start");
+
+// setTimeout(() => {
+//   console.log("setTimeout-A");
+// }, 0);
+// setTimeout(() => {
+//   console.log("setTimeout-B");
+// }, 0);
+// setTimeout(() => {
+//   console.log("setTimeout-C");
+// }, 2 * 1000);
+
+// console.log("app end");
+
+// console.log("start of script");
+
+// setTimeout(() => {
+//   console.log("this is from the task Queue (setTimeout)");
+// }, 0);
+
+// Promise.resolve().then(() => {
+//   console.log("this is from microtask queue (promise)");
+// });
+
+// console.log("end of script");
